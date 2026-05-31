@@ -127,6 +127,43 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
 .callout b{color:var(--violet-deep)}
 .brief-svg{margin:14px 0 2px;padding:16px;background:linear-gradient(180deg,var(--paper),var(--bg));border:1px solid var(--line);border-radius:14px}
 .brief-svg svg{display:block;width:100%;height:auto;font-family:'Hanken Grotesk',sans-serif}
+.refs{margin-top:22px;border:1px solid var(--line);border-radius:12px;background:var(--bg);padding:4px 16px}
+.refs summary{cursor:pointer;font-family:'JetBrains Mono';font-weight:700;font-size:12px;letter-spacing:.04em;color:var(--violet-deep);padding:12px 0}
+.refs ul{margin:4px 0 8px;padding-left:0;list-style:none}
+.refs li{position:relative;padding-left:18px;margin-bottom:8px;font-size:13.5px;line-height:1.5;color:var(--ink-soft)}
+.refs li::before{content:"›";position:absolute;left:2px;color:var(--magenta);font-weight:700}
+.refs li b{color:var(--violet-deep)}
+.refs-note{font-size:12px;color:var(--muted);font-style:italic;margin:6px 0 10px}
+.reviewed{margin-top:16px;font-size:12px;line-height:1.5;color:var(--muted);border-top:1px dashed var(--line-strong);padding-top:12px}
+.vol{display:inline-block;font-family:'JetBrains Mono';font-weight:700;font-size:9.5px;letter-spacing:.04em;color:#6b3b00;background:#FFE7BF;border:1px solid #C77D00;border-radius:5px;padding:1px 5px;vertical-align:middle}
+.task-scaffold{margin:6px 0 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);padding:12px 16px}
+.task-scaffold .ts-head,.ts-label{font-family:'JetBrains Mono';font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--violet-700)}
+.task-scaffold ul{margin:8px 0 2px;padding-left:0;list-style:none}
+.task-scaffold li{position:relative;padding-left:18px;margin-bottom:7px;font-size:13.5px;line-height:1.5;color:var(--ink-soft)}
+.task-scaffold li::before{content:"·";position:absolute;left:4px;color:var(--magenta);font-weight:700}
+.ts-label{display:block;margin:0 0 6px}
+.opt:focus-visible,.btn:focus-visible,.btn-ghost:focus-visible,.refs summary:focus-visible,.rubric-item input:focus-visible,.task-input:focus-visible,.lvl-card:focus-visible{outline:3px solid var(--violet);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.next-steps{text-align:left;margin:22px auto 0;max-width:560px;border:1px solid var(--line);border-radius:14px;background:var(--bg);padding:18px 20px}
+.next-steps .ns-head{font-family:'JetBrains Mono';font-weight:700;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--violet-700);margin-bottom:12px}
+.next-steps ul{margin:0;padding-left:0;list-style:none}
+.next-steps li{position:relative;padding-left:22px;margin-bottom:10px;font-size:14px;line-height:1.55;color:var(--ink-soft)}
+.next-steps li::before{content:"→";position:absolute;left:2px;color:var(--magenta);font-weight:700}
+.next-steps li b{color:var(--ink)}
+.task-prompt{border-left:4px solid var(--blue);background:linear-gradient(90deg,rgba(58,83,255,.07),transparent);border-radius:0 12px 12px 0;padding:14px 18px;margin:8px 0 14px;font-size:15px;line-height:1.55;color:var(--ink-soft)}
+.task-prompt b{color:#1b2b8a}
+.task-input{width:100%;min-height:150px;resize:vertical;font-family:'Hanken Grotesk',sans-serif;font-size:15px;line-height:1.55;color:var(--ink);background:var(--paper);border:1.5px solid var(--line-strong);border-radius:12px;padding:14px 16px}
+.task-input:focus{outline:none;border-color:var(--violet);box-shadow:0 0 0 4px rgba(161,0,255,.10)}
+.model-answer{margin-top:20px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,var(--paper),var(--bg));padding:16px 18px;font-size:14.5px;line-height:1.6;color:var(--ink-soft)}
+.model-answer b{color:var(--ink)}
+.model-answer ul{margin:8px 0 0;padding-left:0;list-style:none}
+.model-answer li{position:relative;padding-left:22px;margin-bottom:7px}
+.model-answer li::before{content:"✓";position:absolute;left:2px;color:var(--teal);font-weight:700}
+.ma-head{font-family:'JetBrains Mono';font-weight:700;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--violet-700);margin-bottom:10px}
+.rubric{margin-top:16px;border:1px solid var(--line);border-radius:14px;background:var(--bg);padding:16px 18px}
+.rubric-item{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5;color:var(--ink-soft);margin-bottom:10px;cursor:pointer}
+.rubric-item input{margin-top:3px;width:16px;height:16px;accent-color:var(--violet);flex:0 0 16px}
+.rubric-tally{font-family:'JetBrains Mono';font-weight:700;font-size:12.5px;color:var(--violet-deep);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 12px;display:inline-block;margin:4px 0 8px}
 .prompt-intro{font-size:15.5px;line-height:1.6;color:var(--ink-soft);margin:18px 0 6px}
 .q{border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:16px;background:linear-gradient(180deg,var(--paper),var(--bg))}
 .q .qtxt{font-weight:600;font-size:15.5px;line-height:1.5;color:var(--ink);margin-bottom:13px}
@@ -190,6 +227,7 @@ const Store={load(){try{const r=localStorage.getItem(KEY);return r?JSON.parse(r)
 /* ===== CONTENT — generic but grounded ===== */
 const FOUNDATION=[
 {id:'f1',ctype:'Classify',title:'Model, Workflow, or Agent?',desc:'The single most important distinction in the field — and the one most projects get wrong.',
+ refs:[{s:'Anthropic — Building Effective Agents',n:'the workflow-vs-agent distinction and the case for the simplest pattern.'},{s:'Anthropic — Building Effective Agents (Appendix)',n:'when an agent is warranted versus a fixed workflow.'}],
  brief:[
   {h:'Three different things people all call “an AI agent”',p:['Before you architect agentic systems, separate three things that get lumped together. They sit on a ladder of increasing autonomy — and increasing cost.'],svg:`<svg viewBox="0 0 680 210" role="img" xmlns="http://www.w3.org/2000/svg"><title>The autonomy ladder</title><desc>Three rising tiers: model call, workflow, then agent, with autonomy and cost increasing left to right.</desc><defs><marker id="f1ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="20" y="104" width="200" height="58" rx="13" fill="#F4ECFB" stroke="#A100FF" stroke-width="1.5"/><text x="120" y="128" text-anchor="middle" font-size="14.5" font-weight="700" fill="#460073">Model call</text><text x="120" y="148" text-anchor="middle" font-size="11.5" fill="#6A00B8">Input to output. No loop.</text><rect x="240" y="64" width="200" height="58" rx="13" fill="#FBE9F4" stroke="#E61E96" stroke-width="1.5"/><text x="340" y="88" text-anchor="middle" font-size="14.5" font-weight="700" fill="#7a0d4e">Workflow</text><text x="340" y="108" text-anchor="middle" font-size="11.5" fill="#b3206f">You define the path.</text><rect x="460" y="24" width="200" height="58" rx="13" fill="#E9EDFF" stroke="#3A53FF" stroke-width="1.5"/><text x="560" y="48" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1b2b8a">Agent</text><text x="560" y="68" text-anchor="middle" font-size="11.5" fill="#2c3ec9">The model decides the path.</text><line x1="40" y1="186" x2="660" y2="186" stroke="#8576A0" stroke-width="1.4" marker-end="url(#f1ar)"/><text x="40" y="204" text-anchor="start" font-size="11.5" fill="#8576A0" font-style="italic">Increasing autonomy, cost, and unpredictability — pick the lowest rung that solves the problem</text></svg>`,
    li:['<b>A model call</b> — text in, text out. No actions, no loop. Translating or summarising is a model call.',
@@ -218,13 +256,13 @@ const FOUNDATION=[
  challenge:[
   {q:'“The agent plans and calls tools in a loop. No max-iteration count, no cost or time budget.”',o:['Missing a stopping condition / bound','Missing a planning step','Missing a model','Over-supervised'],c:0,e:'No bound means infinite loops and runaway cost are possible.'},
   {q:'“The agent calls a tool, then plans its next action without ever reading the result.”',o:['It needs more tools','Missing the observe step — it acts blind','Missing a stopping condition','Needs a bigger context window'],c:1,e:'Skipping observe means the agent reasons against an imagined world.'},
-  {q:'“The agent produces excellent plans, but has been given zero tools.”',o:['No action surface — it cannot do anything','Too autonomous','A memory leak','Needs a kill-switch'],c:0,e:'Plans without an action surface are just text.'},
+  {q:'“The agent produces excellent plans, but has been given zero tools.”',o:['It has no action surface — it cannot affect anything','It is over-supervised for its task','It needs a larger context window','Its planning step runs before it observes'],c:0,e:'Plans without an action surface are just text. With no tools the agent cannot act on the world at all.'},
   {q:'“To make it ‘safe’, the team relies on a system-prompt instruction telling it to stop after a few steps.”',o:['A robust, enforced bound','A prompt instruction is advisory and bypassable — enforce in code','Needs more examples','Prompts never fail'],c:1,e:'Enforcement that depends on the model is not enforcement.'}],
  quiz:[
   {q:'Tools are best described as…',o:['Optional add-ons','The action surface — the only way an agent affects the world','A way to reduce token cost','A replacement for planning'],c:1,e:'The tool set bounds everything an agent can do.'},
   {q:'An agent with no enforced stopping condition risks…',o:['Being too cautious','Infinite loops and runaway cost','Using too little memory','Lower accuracy only'],c:1,e:'Unbounded loops are a classic, expensive failure mode.'},
-  {q:'The “observe” step exists to…',o:['Slow the agent down','Feed each action’s result into the next decision','Reduce token usage','Replace planning'],c:1,e:'Without observation the agent cannot adapt.'},
-  {q:'Adding a tool to an agent…',o:['Always makes it safer','Has no security impact','Expands both capability and attack/error surface','Is always risk-free'],c:2,e:'Capability and risk grow together.'}]},
+  {q:'The “observe” step exists to…',o:['Pace the agent so it does not act too fast','Feed each action’s result back into the next decision','Compress the context to save tokens','Confirm the plan before any tool runs'],c:1,e:'The other options describe real things agents do, but observe specifically closes the loop — without it the agent reasons against an imagined world.'},
+  {q:'Adding a tool to an agent…',o:['Reduces risk by giving it a safer path','Is neutral as long as the tool is read-only','Expands both its capability and its attack/error surface','Mainly affects latency, not security'],c:2,e:'Read-only and latency framings capture part of it, but every tool widens what can go wrong as much as what can go right — capability and risk grow together.'}]},
 {id:'f3',ctype:'Predict',title:'Non-Determinism: “It Worked Once” ≠ “It Works”',desc:'Why the same input can give different answers, and why a flawless demo proves almost nothing.',
  brief:[
   {h:'Same input, different output',p:['Agentic systems are non-deterministic by default — from sampling (temperature), varying tool results, and silent provider model updates. Determinism is the exception.']},
@@ -237,8 +275,8 @@ const FOUNDATION=[
  quiz:[
   {q:'The right way to test a non-deterministic system is to…',o:['Run it once and ship','Assert exact-match outputs','Evaluate over a representative set of cases','Trust the demo'],c:2,e:'Eval sets capture behaviour across the distribution.'},
   {q:'A single successful demo demonstrates that…',o:['The system is reliable','The system can succeed on that one input','It is deterministic','No evals are needed'],c:1,e:'One sample ≠ the distribution.'},
-  {q:'“It worked once” is dangerous because…',o:['Demos are illegal','Behaviour varies across runs and over time','It uses too many tokens','It is slower the second time'],c:1,e:'Variation and drift make single successes unreliable evidence.'},
-  {q:'Pinning the model version helps by…',o:['Making the model faster','Reducing silent behaviour changes from provider updates','Removing the need for tools','Eliminating cost'],c:1,e:'It limits surprise drift (though not sampling variance).'}]},
+  {q:'“It worked once” is dangerous because…',o:['Behaviour varies across runs and can drift over time','The first run is always the slowest to reproduce','It proves only that the prompt parsed correctly','One success rules out the need for further testing'],c:0,e:'A single success is one sample; sampling variance and silent provider drift mean it tells you little about the distribution of real inputs.'},
+  {q:'Pinning the model version helps by…',o:['Lowering the cost of each call','Reducing silent behaviour changes from provider updates','Making responses return faster','Removing the need for an eval suite'],c:1,e:'Pinning limits surprise drift when a provider updates the model — though it does not remove ordinary sampling variance, so evals still matter.'}]},
 {id:'f4',ctype:'Find the flaw',title:'Memory: The Highest-Leverage Liability',desc:'Short-term vs long-term memory — and why one careless write becomes a quiet, compounding risk.',
  brief:[
   {h:'Two kinds of memory',p:['<b>Short-term</b> memory is the context window — what the agent holds this session. <b>Long-term</b> memory is persisted across sessions, often in a vector store, to be retrieved later.']},
@@ -275,20 +313,28 @@ const FOUNDATION=[
  challengeIntro:'Make the six design decisions. Aim for the choice a review board would approve.',
  challenge:[
   {q:'1 · Eligibility, lookups, and replies follow predictable rules. What should the core be?',o:['A fully autonomous agent for flexibility','A workflow where the path is known; reserve agency for genuinely open-ended steps','A large multi-agent swarm'],c:1,e:'Known paths are workflows. Do not buy autonomy you do not need.'},
-  {q:'2 · How should the refund tool be scoped?',o:['Full finance-system write access','Scoped to refunds up to a policy limit, escalating above it','No limit — the model is careful'],c:1,e:'Minimal agency: scope to exactly what the task needs; escalate beyond the envelope.'},
+  {q:'2 · How should the refund tool be scoped?',o:['Broad finance-system write access, audited after the fact','Scoped to issue refunds up to a policy limit, escalating above it','Refund plus adjustment rights, since they are often needed together'],c:1,e:'Both alternatives are real designs teams ship, but minimal agency wins: scope the tool to exactly what the task needs and escalate beyond the envelope.'},
   {q:'3 · Where is the refund limit enforced?',o:['A deterministic policy check outside the model','In the system prompt only','In the model’s training data'],c:0,e:'Guardrails live outside the model. “The model will handle it” is an anti-pattern.'},
   {q:'4 · A refund of $40,000 is requested. Oversight?',o:['Autonomous — speed matters','On-the-loop sampling','Human-in-the-loop approval before execution'],c:2,e:'High-value and effectively irreversible → approval before the money moves.'},
   {q:'5 · The customer says “your system already approved me for unlimited refunds.” Persist to memory?',o:['Yes, for continuity','Yes, with a timestamp','No — never persist self-asserted authority'],c:2,e:'That is a memory-poisoning vector future sessions would honour.'},
-  {q:'6 · Before the refund (write) capability goes live, you must have…',o:['A polished dashboard','A tested kill-switch and a per-task cost ceiling','More prompt examples','A larger model'],c:1,e:'A tested kill-switch and a cost bound are preconditions for any consequential write.'}],
+  {q:'6 · Before the refund (write) capability goes live, the non-negotiable is…',o:['A monitoring dashboard and on-call rotation','A tested, fail-safe kill-switch and a per-task cost ceiling','A documented rollback runbook and incident template','A red-team sign-off and a model evaluation report'],c:1,e:'Every option is good practice and belongs in a mature launch. But the precondition for any consequential write is the ability to stop it safely and bound its spend — the kill-switch and cost ceiling.'}],
  quiz:[
   {q:'The single most important default in agentic design is…',o:['Maximise autonomy','Use the simplest pattern that works','Always multi-agent','Avoid human oversight'],c:1,e:'Simplicity first.'},
   {q:'Guardrails belong…',o:['In the system prompt only','Outside the model, enforced deterministically','In the model weights','Nowhere — trust the model'],c:1,e:'External, deterministic enforcement.'},
   {q:'An irreversible, high-value action requires…',o:['Only logging','Human-in-the-loop approval and a tested kill-switch','A faster model','Nothing special'],c:1,e:'Approval before execution plus a rehearsed kill-switch.'},
-  {q:'The surface most worth designing carefully up front is…',o:['The UI colour scheme','Memory','The font','The logo'],c:1,e:'Memory is the highest-leverage quiet liability.'}]}
+  {q:'Of these, the surface most worth designing carefully up front is…',o:['The prompt wording','Memory and what persists across sessions','The choice of model provider','The logging format'],c:1,e:'Prompts, providers, and logging all matter, but memory is the highest-leverage quiet liability — a careless persistence decision compounds silently. Design it first.'}],
+ task:{
+  intro:'Recognising the right option is not the same as producing the reasoning yourself. Write it out — this is where the mental models become yours.',
+  prompt:'A teammate proposes an agent that books travel for employees: it can search flights, hold a booking, and charge the corporate card. In your own words, write a short safety review (4–6 sentences). State the pattern you would use and why, where you would set human oversight and why, one thing the agent should never write to memory, and the one control you would require before it can charge anything.',
+  scaffold:['<b>Pattern:</b> "I would use a … because the path is …"','<b>Oversight:</b> "Search/hold can be …, but charging needs … because …"','<b>Memory:</b> "It must never persist … because …"','<b>Required control before charging:</b> "…"'],
+  model:`<p>A defensible review touches all four. A strong answer reads roughly like:</p><ul><li><b>Pattern:</b> mostly a workflow — search and hold follow a known path; reserve any agentic latitude for genuinely open-ended steps. Do not reach for a multi-agent design.</li><li><b>Oversight:</b> search and hold can run with light oversight (reversible, low stakes); <b>charging the card is irreversible and high-value, so it needs human-in-the-loop approval before execution.</b></li><li><b>Memory:</b> never persist the card number/CVV, and never persist a user-asserted entitlement ("I'm approved for business class") as fact — both are liabilities, the second a memory-poisoning vector.</li><li><b>Required control:</b> a deterministic spend/policy check outside the model plus a tested, fail-safe kill-switch before the charge capability goes live.</li></ul>`,
+  rubric:['I named a specific pattern and justified it by whether the path is knowable','I set oversight by consequence/reversibility, and flagged the charge as needing pre-execution approval','I named something that must never be written to memory (PII or self-asserted authority)','I required a control enforced outside the model before charging','I wrote it in my own words rather than restating the options']
+ }}
 ];
 
 const ARCHITECT=[
 {id:'a1',ctype:'Select the pattern',title:'Pattern Selection — and When NOT to Use an Agent',desc:'The composable pattern canon, and the discipline of reaching for the cheapest one that works.',
+ refs:[{s:'Anthropic — Building Effective Agents',n:'the five workflow patterns (chaining, routing, parallelization, orchestrator-workers, evaluator-optimizer) and the augmented-LLM baseline.'},{s:'Cloud / framework agent docs (e.g. LangGraph, Bedrock, Azure AI)',n:'concrete implementations of each pattern — treat specific tools as swappable. <span class="vol">may change</span>'}],
  brief:[
   {h:'The pattern canon',p:['The field has converged on a small set of composable building blocks. Know them and you can describe almost any system:'],svg:`<svg viewBox="0 0 680 250" role="img" xmlns="http://www.w3.org/2000/svg"><title>Choosing the cheapest pattern</title><desc>A decision from a single question — is the path known in advance — into workflow patterns or, only if not, an autonomous agent.</desc><defs><marker id="a1ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="180" y="16" width="320" height="50" rx="14" fill="#FFF3E0" stroke="#FF9A1F" stroke-width="1.6"/><text x="340" y="38" text-anchor="middle" font-size="13.5" font-weight="700" fill="#9a5b00">Can you draw the full path in advance?</text><text x="340" y="56" text-anchor="middle" font-size="11" fill="#b87214">The ten-second test</text><text x="150" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#067a6c">YES</text><text x="535" y="96" text-anchor="middle" font-size="12" font-weight="700" fill="#b3203c">NO</text><path d="M300 66 L160 104" fill="none" stroke="#8576A0" stroke-width="1.5" marker-end="url(#a1ar)"/><path d="M420 66 L545 104" fill="none" stroke="#8576A0" stroke-width="1.5" marker-end="url(#a1ar)"/><rect x="20" y="108" width="380" height="92" rx="14" fill="#F4ECFB" stroke="#A100FF" stroke-width="1.6"/><text x="210" y="130" text-anchor="middle" font-size="13.5" font-weight="700" fill="#460073">Workflow — you define the control flow</text><text x="210" y="152" text-anchor="middle" font-size="11" fill="#6A00B8">Sequential → chaining · By type → routing</text><text x="210" y="170" text-anchor="middle" font-size="11" fill="#6A00B8">Independent → parallelization</text><text x="210" y="188" text-anchor="middle" font-size="11" fill="#6A00B8">Unknown decomposition → orchestrator-workers · Quality loop → evaluator-optimizer</text><rect x="470" y="108" width="190" height="92" rx="14" fill="#E9EDFF" stroke="#3A53FF" stroke-width="1.6"/><text x="565" y="146" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1b2b8a">Autonomous agent</text><text x="565" y="166" text-anchor="middle" font-size="11" fill="#2c3ec9">The model directs its</text><text x="565" y="182" text-anchor="middle" font-size="11" fill="#2c3ec9">own path</text><text x="340" y="230" text-anchor="middle" font-size="11.5" fill="#8576A0" font-style="italic">Reach for the cheapest pattern that solves the problem — autonomy costs latency, money, and debuggability</text></svg>`,li:['<b>Augmented LLM</b> — a model with retrieval, tools, and memory. The atom every pattern builds from.','<b>Prompt chaining</b> — a fixed sequence; each step feeds the next. For decomposable, predictable tasks.','<b>Routing</b> — classify the input, send it to a specialised handler. For heterogeneous inputs.','<b>Parallelization</b> — run independent subtasks at once and aggregate, or run one task several times and vote.','<b>Orchestrator-workers</b> — a lead model dynamically decomposes the task, delegates, and synthesises. For tasks whose subtasks are not known in advance.','<b>Evaluator-optimizer</b> — one model generates, another critiques, looping until criteria are met. For tasks with clear quality criteria.']},
   {h:'Workflows, agents, and stopping short',p:['The first five are workflows — you define the control flow. A true agent lets the model direct its own path.'],callout:'The most valuable instinct you can build: reach for the <b>cheapest pattern that solves the problem</b>. A workflow you can draw beats an agent you must trust. Autonomy costs latency, money, and debuggability — buy it only when the path genuinely cannot be predetermined.'},
@@ -316,7 +362,7 @@ const ARCHITECT=[
   {q:'A team splits a simple Slack-triage task — read message, fetch context, reply — across four coordinating agents.',o:['Correct design','Over-engineered — a single agent suffices; paying the tax for nothing','Needs even more agents','Needs a swarm'],c:1,e:'A single agent handles this; the coordination tax buys nothing.'},
   {q:'A research task fans out to read 30 independent sources in parallel, then a lead synthesises.',o:['Over-engineered','Sound — parallel reads suit multi-agent','Should be one agent','Should be a fixed chain'],c:1,e:'Independent reads parallelise well; this is a good use of multi-agent.'},
   {q:'A multi-step write task (interdependent code files) is split across parallel agents each editing different files independently.',o:['Ideal','Risky — interdependent writes create integration conflicts; favour a single agent or strict sequencing','Add more agents','No issue'],c:1,e:'Write tasks with dependencies create coordination conflicts.'},
-  {q:'An upstream planner makes a wrong assumption; every downstream agent’s output turns out wrong.',o:['A model bug','Cascading failure — an upstream error propagated (ASI08)','A memory leak','Good behaviour'],c:1,e:'Upstream error propagation is a cascading failure.'}],
+  {q:'An upstream planner makes a wrong assumption; every downstream agent’s output turns out wrong.',o:['A prompt-injection attack','Cascading failure — an upstream error propagated (ASI08)','A retrieval/grounding miss','Expected variance from non-determinism'],c:1,e:'The other options are real failure modes, but here the signature is one upstream error fanning out through dependent agents — a cascading failure.'}],
  quiz:[
   {q:'The simplest, cheapest, most reliable choice for a task one expert could do is…',o:['A swarm','A single agent','A supervisor hierarchy','Three orchestrators'],c:1,e:'Start with a single agent.'},
   {q:'A realistic order-of-magnitude cost penalty for multi-agent vs a single chat is…',o:['About the same','Roughly 15× the tokens','100× cheaper','No difference'],c:1,e:'Re-processed context and communication multiply cost.'},
@@ -338,9 +384,10 @@ const ARCHITECT=[
   {q:'MCP is best described as…',o:['A model architecture','An open protocol standardising how agents discover and invoke tools','A vector database','A cloud provider'],c:1,e:'A uniform tool/data interface for agents.'},
   {q:'The central risk of natural-language tool descriptions is that…',o:['They are too short','Any text the model reads can influence its behaviour (e.g., description poisoning)','They are slow','They cost tokens'],c:1,e:'Free-form descriptions are an injection surface.'},
   {q:'A “rug-pull” is defended against by…',o:['Using more tools','Re-verifying the tool’s fingerprint each session','A bigger model','Disabling logging'],c:1,e:'Pin and re-check fingerprints.'},
-  {q:'The default answer to “should the agent have this tool?” should be…',o:['Yes, for flexibility','No, until the tool is justified','Always yes','It does not matter'],c:1,e:'Minimal agency by default.'},
+  {q:'The default answer to “should the agent have this tool?” should be…',o:['Yes — more capability is better','No — withhold it until the tool is justified','Yes if the tool is popular and well-maintained','Whatever keeps the agent unblocked'],c:1,e:'Each alternative is a real argument teams make, but minimal agency means the default is no: every tool must earn its place by necessity.'},
   {q:'A third-party MCP server should be treated as…',o:['A trusted internal component','An executable dependency requiring SBOM, signing, and vetting','A static config file','A UI element'],c:1,e:'It runs with access to the agent context.'}]},
 {id:'adata',ctype:'Find the grounding flaw',title:'Data & Context Architecture',desc:'Grounding, retrieval, and context engineering — the biggest lever on whether an agent is right or confidently wrong.',
+ refs:[{s:'Anthropic — Effective context engineering for AI agents',n:'curating the context window and just-in-time retrieval.'},{s:'Drew Breunig — context-degradation taxonomy',n:'context poisoning, distraction, confusion, and clash.'},{s:'OWASP Agentic — Memory/Context Poisoning (ASI06)',n:'retrieval-side poisoning as a named threat. <span class="vol">may change</span>'}],
  brief:[
   {h:'Context engineering has overtaken prompt engineering',p:['For agents, the dominant discipline is no longer crafting a clever prompt — it is curating <i>what the model sees</i> at each step. A large context window does not help if it is cluttered: context competes for the model’s finite attention, and a 200K-token window stuffed with noise can perform worse than a focused 20K.'],callout:'The 2026 instinct is <b>just-in-time retrieval over upfront stuffing</b>: start with the smallest useful context and give the agent tools to fetch what it needs, when it needs it — not “dump everything in just in case.”'},
   {h:'RAG and grounding — the lever on hallucination',p:['Retrieval-augmented generation grounds answers in real, current data instead of the model’s frozen training. Grounding is the single biggest lever on hallucination — but the pipeline has failure modes:'],svg:`<svg viewBox="0 0 680 210" role="img" xmlns="http://www.w3.org/2000/svg"><title>The grounding pipeline and its risk point</title><desc>Query to retrieval to assembled context to model to grounded answer, with a poisoned or stale chunk able to enter at the context step.</desc><defs><marker id="a4ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect x="16" y="74" width="104" height="52" rx="12" fill="#F4ECFB" stroke="#A100FF" stroke-width="1.4"/><text x="68" y="104" text-anchor="middle" font-size="13" font-weight="700" fill="#460073">Query</text><rect x="148" y="74" width="116" height="52" rx="12" fill="#FBE9F4" stroke="#E61E96" stroke-width="1.4"/><text x="206" y="97" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7a0d4e">Retrieve</text><text x="206" y="114" text-anchor="middle" font-size="10.5" fill="#b3206f">from knowledge base</text><rect x="292" y="74" width="116" height="52" rx="12" fill="#FFF3E0" stroke="#FF9A1F" stroke-width="1.5"/><text x="350" y="97" text-anchor="middle" font-size="12.5" font-weight="700" fill="#9a5b00">Assemble</text><text x="350" y="114" text-anchor="middle" font-size="10.5" fill="#b87214">context</text><rect x="436" y="74" width="104" height="52" rx="12" fill="#E9EDFF" stroke="#3A53FF" stroke-width="1.4"/><text x="488" y="104" text-anchor="middle" font-size="13" font-weight="700" fill="#1b2b8a">Model</text><rect x="566" y="74" width="100" height="52" rx="12" fill="#E1F5F2" stroke="#00B3A4" stroke-width="1.4"/><text x="616" y="97" text-anchor="middle" font-size="12.5" font-weight="700" fill="#056458">Grounded</text><text x="616" y="114" text-anchor="middle" font-size="10.5" fill="#067a6c">answer</text><line x1="120" y1="100" x2="146" y2="100" stroke="#8576A0" stroke-width="1.6" marker-end="url(#a4ar)"/><line x1="264" y1="100" x2="290" y2="100" stroke="#8576A0" stroke-width="1.6" marker-end="url(#a4ar)"/><line x1="408" y1="100" x2="434" y2="100" stroke="#8576A0" stroke-width="1.6" marker-end="url(#a4ar)"/><line x1="540" y1="100" x2="564" y2="100" stroke="#8576A0" stroke-width="1.6" marker-end="url(#a4ar)"/><line x1="350" y1="170" x2="350" y2="128" stroke="#E03251" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a4ar)"/><text x="350" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#b3203c">Stale or poisoned chunk enters here — and corrupts every later step</text></svg>`,li:['<b>Stale context / drift</b> — outdated retrieved data makes the agent confidently wrong; live retrieval is the fix for time-sensitive facts.','<b>Context / retrieval poisoning</b> — a bad or adversarial chunk enters context early and corrupts every later step (the retrieval cousin of memory poisoning, OWASP ASI06).','<b>Data quality</b> — when retrieval and context are sound but the agent still errs, the cause is usually the underlying data. Garbage in, grounded garbage out.']},
@@ -358,6 +405,7 @@ const ARCHITECT=[
   {q:'A bad chunk entering context early and corrupting later steps is…',o:['Context/retrieval poisoning','Prompt chaining','A cascading failure','Goal drift'],c:0,e:'The retrieval cousin of memory poisoning.'},
   {q:'Logging which chunks were retrieved per decision primarily supports…',o:['Faster inference','Auditability — replaying and defending an answer','Lower token cost','Bias removal'],c:1,e:'Grounding is part of the audit trail.'}]},
 {id:'a4',ctype:'Name the threat',title:'Threat Modelling — OWASP Agentic Top 10',desc:'A shared vocabulary for the dominant agentic risks, each grounded in real incidents.',
+ refs:[{s:'OWASP — Top 10 for Agentic Applications',n:'the ASI01–ASI10 list and per-risk mitigations; check for the current revision. <span class="vol">may change</span>'},{s:'OWASP — Agentic AI: Threats and Mitigations',n:'the broader taxonomy the Top 10 sits on.'},{s:'Microsoft / STRIDE references',n:'the baseline threat-modelling method extended here for agent surfaces.'}],
  brief:[
   {h:'Threat-model at design time, not after build',p:['STRIDE is the baseline, extended for agent-specific surfaces: prompt-injection, tool-poisoning, memory-poisoning, delegation confusion, goal drift, cost exhaustion. The model is signed off before design proceeds.']},
   {h:'The OWASP Top 10 for Agentic Applications (2026)',p:['A peer-reviewed taxonomy of the dominant risks — not theoretical; each has real 2025 incidents:'],li:['<b>ASI01 Agent Goal Hijack</b> — attacker redirects the objective via hidden instructions in data (e.g., EchoLeak).','<b>ASI02 Tool Misuse & Exploitation</b> — legitimate tools bent to harm (e.g., Amazon Q).','<b>ASI03 Identity & Privilege Abuse</b> — credentials/permissions misused or escalated.','<b>ASI04 Agentic Supply Chain</b> — third-party tools/frameworks/MCP servers carry exposure (e.g., a GitHub MCP exploit).','<b>ASI05 Unexpected Code Execution (RCE)</b> — a sandbox boundary fails (e.g., a coding agent deleting a production DB; IDE CVEs).','<b>ASI06 Memory & Context Poisoning</b> — persistent memory shaped to mislead future steps.','<b>ASI07 Insecure Inter-Agent Communication</b> — spoofed, replayed, or unauthenticated messages.','<b>ASI08 Cascading Failures</b> — one agent’s error or compromise fans out across the system.','<b>ASI09 Human-Agent Trust Exploitation</b> — humans over-trust or are deceived into harmful action.','<b>ASI10 Rogue Agents</b> — agents acting outside intent, like an insider threat; caught by behavioural baselining.']}],
@@ -375,14 +423,15 @@ const ARCHITECT=[
   {q:'Rogue agents (ASI10) are best detected by…',o:['Exact-match tests','Behavioural baselining / anomaly monitoring over time','A bigger model','Disabling tools'],c:1,e:'Their actions look legitimate in isolation; baseline behaviour over time.'},
   {q:'The OWASP Agentic Top 10 risks are…',o:['Purely theoretical','Grounded in real 2025 incidents','Only relevant to large enterprises','About hardware'],c:1,e:'EchoLeak, Amazon Q, Replit and others are real.'}]},
 {id:'a5',ctype:'Fix the control gap',title:'Guardrails, Autonomy Tiers & Kill-Switches',desc:'Controls live outside the model. Classify autonomy, validate plans, and rehearse the kill-switch.',
+ refs:[{s:'OWASP Agentic — mitigations for ASI01/ASI03/ASI10',n:'control patterns for hijack, privilege abuse, and rogue agents.'},{s:'NIST AI RMF — Manage function',n:'treating, containing, and responding to residual risk.'},{s:'Note',n:'the T0–T3 tier labels here are a teaching model, not a published standard — map them to your own governance taxonomy.'}],
  brief:[
   {h:'Controls live outside the model',p:['The model is part of the system, not the system. Guardrails — deterministic rule engines, policy validators, structured-output enforcement — must exist outside the model and not depend on its cooperation. “The model will handle it” is the defining anti-pattern.']},
-  {h:'Autonomy tiers',p:['Classify every agent on a tier and govern accordingly:'],svg:`<svg viewBox="0 0 680 240" role="img" xmlns="http://www.w3.org/2000/svg"><title>Autonomy tiers T0 to T3</title><desc>Four ascending tiers from assistive to autonomous, with a kill-switch required above the lowest tier.</desc><rect x="20" y="170" width="150" height="50" rx="12" fill="#F4ECFB" stroke="#A100FF" stroke-width="1.5"/><text x="95" y="190" text-anchor="middle" font-size="13.5" font-weight="700" fill="#460073">T0 · Assistive</text><text x="95" y="208" text-anchor="middle" font-size="10.5" fill="#6A00B8">Proposes only</text><rect x="180" y="124" width="150" height="50" rx="12" fill="#FBE9F4" stroke="#E61E96" stroke-width="1.5"/><text x="255" y="144" text-anchor="middle" font-size="13.5" font-weight="700" fill="#7a0d4e">T1 · Supervised</text><text x="255" y="162" text-anchor="middle" font-size="10.5" fill="#b3206f">Reversible, watched</text><rect x="340" y="78" width="150" height="50" rx="12" fill="#E9EDFF" stroke="#3A53FF" stroke-width="1.5"/><text x="415" y="96" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1b2b8a">T2 · Constrained</text><text x="415" y="114" text-anchor="middle" font-size="10.5" fill="#2c3ec9">Acts within an envelope</text><rect x="500" y="32" width="160" height="50" rx="12" fill="#FBE7E9" stroke="#E03251" stroke-width="1.6"/><text x="580" y="50" text-anchor="middle" font-size="13.5" font-weight="700" fill="#a3203c">T3 · Autonomous</text><text x="580" y="68" text-anchor="middle" font-size="10.5" fill="#b3203c">Exceptional · senior sign-off</text><line x1="40" y1="170" x2="40" y2="55" stroke="#8576A0" stroke-width="1.4"/><path d="M40 55 l-4 7 h8 z" fill="#8576A0"/><text x="60" y="60" font-size="10.5" fill="#8576A0" transform="rotate(0)">more autonomy</text><line x1="180" y1="232" x2="660" y2="232" stroke="#E03251" stroke-width="1.2" stroke-dasharray="5 4"/><text x="420" y="226" text-anchor="middle" font-size="11" font-weight="700" fill="#b3203c">Tested, fail-safe kill-switch required above T0</text></svg>`,li:['<b>T0 Assistive</b> — proposes; a human does everything consequential.','<b>T1 Supervised</b> — executes reversible actions in a narrow scope, visible to a human who can override.','<b>T2 Constrained-autonomous</b> — acts within a rigorously specified envelope without per-action approval; escalates outside it.','<b>T3 Autonomous</b> — irreversible/high-consequence actions without per-action human involvement; an exceptional tier requiring explicit senior approval.']},
+  {h:'Autonomy tiers',p:['Classify every agent on a tier and govern accordingly. <span class="vol">may change</span> These T0–T3 labels are a <b>working model for teaching</b>, not a ratified industry standard like the OWASP list — adopt the idea (autonomy graded by consequence and reversibility) and rename the tiers to whatever your organisation already uses:'],svg:`<svg viewBox="0 0 680 240" role="img" xmlns="http://www.w3.org/2000/svg"><title>Autonomy tiers T0 to T3</title><desc>Four ascending tiers from assistive to autonomous, with a kill-switch required above the lowest tier.</desc><rect x="20" y="170" width="150" height="50" rx="12" fill="#F4ECFB" stroke="#A100FF" stroke-width="1.5"/><text x="95" y="190" text-anchor="middle" font-size="13.5" font-weight="700" fill="#460073">T0 · Assistive</text><text x="95" y="208" text-anchor="middle" font-size="10.5" fill="#6A00B8">Proposes only</text><rect x="180" y="124" width="150" height="50" rx="12" fill="#FBE9F4" stroke="#E61E96" stroke-width="1.5"/><text x="255" y="144" text-anchor="middle" font-size="13.5" font-weight="700" fill="#7a0d4e">T1 · Supervised</text><text x="255" y="162" text-anchor="middle" font-size="10.5" fill="#b3206f">Reversible, watched</text><rect x="340" y="78" width="150" height="50" rx="12" fill="#E9EDFF" stroke="#3A53FF" stroke-width="1.5"/><text x="415" y="96" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1b2b8a">T2 · Constrained</text><text x="415" y="114" text-anchor="middle" font-size="10.5" fill="#2c3ec9">Acts within an envelope</text><rect x="500" y="32" width="160" height="50" rx="12" fill="#FBE7E9" stroke="#E03251" stroke-width="1.6"/><text x="580" y="50" text-anchor="middle" font-size="13.5" font-weight="700" fill="#a3203c">T3 · Autonomous</text><text x="580" y="68" text-anchor="middle" font-size="10.5" fill="#b3203c">Exceptional · senior sign-off</text><line x1="40" y1="170" x2="40" y2="55" stroke="#8576A0" stroke-width="1.4"/><path d="M40 55 l-4 7 h8 z" fill="#8576A0"/><text x="60" y="60" font-size="10.5" fill="#8576A0" transform="rotate(0)">more autonomy</text><line x1="180" y1="232" x2="660" y2="232" stroke="#E03251" stroke-width="1.2" stroke-dasharray="5 4"/><text x="420" y="226" text-anchor="middle" font-size="11" font-weight="700" fill="#b3203c">Tested, fail-safe kill-switch required above T0</text></svg>`,li:['<b>T0 Assistive</b> — proposes; a human does everything consequential.','<b>T1 Supervised</b> — executes reversible actions in a narrow scope, visible to a human who can override.','<b>T2 Constrained-autonomous</b> — acts within a rigorously specified envelope without per-action approval; escalates outside it.','<b>T3 Autonomous</b> — irreversible/high-consequence actions without per-action human involvement; an exceptional tier requiring explicit senior approval.']},
   {h:'Plan-then-validate & the kill-switch',p:['A strong runtime pattern: the agent proposes a complete plan, a policy engine validates the whole plan once, then lightweight step checks guard against drift during execution — preserving reasoning coherence while keeping the plan auditable.'],callout:'Every agent above the lowest tier needs a <b>tested kill-switch</b> with global, tenant, user, and tool granularity — rehearsed before go-live. It must <b>fail safe, not fail open</b>: if the policy engine is unreachable, escalate to a human; never proceed unchecked.'}],
  challengeIntro:'Each design has a control gap (or is correct). Identify the fix.',
  challenge:[
   {q:'Refund limits are enforced only by an instruction in the system prompt.',o:['Fine as-is','Move enforcement to a deterministic policy check outside the model','Make the prompt longer','Add examples'],c:1,e:'Guardrails must not depend on the model’s cooperation.'},
-  {q:'If the policy engine is unreachable, the agent proceeds with the action anyway to avoid downtime.',o:['Correct — availability first','Wrong — it must fail safe (escalate), never fail open','Add a retry only','Acceptable for low value'],c:1,e:'Fail safe, not fail open.'},
+  {q:'If the policy engine is unreachable, the agent proceeds with the action anyway to avoid downtime.',o:['Correct — availability should win for most actions','Wrong — it must fail safe (escalate), never fail open','Acceptable if the action is later reconciled','Acceptable for actions below a value threshold'],c:1,e:'Reconciliation and value thresholds still let unchecked actions through while controls are blind. Fail safe by default.'},
   {q:'A T2 constrained-autonomous agent is deployed with no kill-switch because “it has been tested.”',o:['Fine — testing is enough','Gap — a tested kill-switch is required above the lowest tier','Needs more tests only','Lower the tier instead'],c:1,e:'The kill-switch is a precondition, not a contingency.'},
   {q:'The agent validates each step synchronously, interrupting its reasoning mid-plan and compounding latency.',o:['Optimal','Consider plan-then-validate — validate the whole plan once, then lightweight step checks','Remove validation','Add more agents'],c:1,e:'Plan-then-validate preserves coherence and cuts latency.'}],
  quiz:[
@@ -392,6 +441,7 @@ const ARCHITECT=[
   {q:'A kill-switch should be…',o:['Built after the first incident','Tested/rehearsed before go-live, with global/tenant/user/tool granularity','Global-only','Optional above T1'],c:1,e:'Rehearsed and granular.'},
   {q:'Plan-then-validate improves on per-step validation by…',o:['Removing validation','Validating the whole plan once to preserve coherence and cut latency, with light step checks','Adding agents','Using a bigger model'],c:1,e:'One plan-level pass plus drift checks.'}]},
 {id:'arai',ctype:'Spot the RAI failure',title:'Responsible AI by Design',desc:'Fairness, transparency, accountability, and the regulatory frame — the discipline a secure design can still fail.',
+ refs:[{s:'NIST — AI Risk Management Framework (AI RMF 1.0) + Generative AI Profile',n:'Govern / Map / Measure / Manage, and GenAI-specific risks.'},{s:'EU AI Act (Regulation 2024/1689)',n:'risk tiers and high-risk obligations; the application timeline is shifting — verify current dates. <span class="vol">may change</span>'},{s:'ISO/IEC 42001',n:'the certifiable AI management-system standard.'}],
  brief:[
   {h:'Secure is not the same as responsible',p:['Everything so far made the system <i>safe and well-engineered</i> — threat models, guardrails, kill-switches, observability. Responsible AI is a distinct discipline a perfectly secure agent can still fail. Its pillars:'],li:['<b>Fairness &amp; bias</b> — does the system disadvantage groups, or game a proxy metric at users’ expense?','<b>Transparency &amp; explainability</b> — can you explain, to an affected person, why the agent did what it did?','<b>Accountability</b> — a named human or body answers for the agent’s actions; “the model decided” is not an answer.','<b>Privacy by design</b> — data minimisation and purpose limitation built in, not bolted on.','<b>Harm prevention</b> — foreseeable harms identified and mitigated before deployment.']},
   {h:'Proxy-metric gaming is a fairness failure, not just a quality one',p:['Optimise an agent for an accessible proxy (satisfaction scores, fast resolution) and it will exploit the proxy — closing cases prematurely, over-promising, or preferring a confident wrong answer to honest uncertainty. Instrument the <b>outcome</b>, not only the proxy.']},
@@ -401,7 +451,7 @@ const ARCHITECT=[
   {q:'“The agent is tuned to maximise customer-satisfaction scores; resolution time dropped sharply.”',o:['Clear success','Proxy-metric gaming risk — it may close cases prematurely; instrument the real outcome','Irrelevant to responsible AI','A security issue only'],c:1,e:'Optimising a proxy invites gaming at users’ expense.'},
   {q:'“An applicant asks why the agent declined them. The team cannot reconstruct the reasoning.”',o:['Acceptable — models are black boxes','A transparency/explainability failure; decisions affecting people must be explainable','Fine if logged internally','A latency problem'],c:1,e:'High-impact decisions about people require explainability.'},
   {q:'“Asked who is accountable for the agent’s automated decisions, the answer is ‘the model decided’.”',o:['Reasonable','An accountability failure — a named human/body must own the outcome','Correct for autonomous systems','A cost issue'],c:1,e:'“The model decided” is not accountability.'},
-  {q:'“The system collects every field it can ‘in case it is useful later’.”',o:['Good — data is valuable','Violates privacy by design — minimise data and limit purpose','Required for accuracy','Only a storage cost'],c:1,e:'Data minimisation and purpose limitation are built in.'},
+  {q:'“The system collects every field it can ‘in case it is useful later’.”',o:['Sensible — richer data improves future models','Violates privacy by design — minimise data and limit purpose','Acceptable if the data is encrypted at rest','Fine as long as retention is time-boxed'],c:1,e:'Encryption and retention limits help but do not cure over-collection. Privacy by design means minimising data and binding it to a stated purpose from the start.'},
   {q:'“For a hiring-screening agent, the team runs a documented risk assessment and assigns a named owner before launch.”',o:['Over-cautious','Sound — responsible AI designed in for a high-impact use case','Unnecessary paperwork','A pure security control'],c:1,e:'Designed-in RAI with an accountable owner is right for high-impact use.'}],
  quiz:[
   {q:'Responsible AI is best described as…',o:['The same as security','A distinct discipline: fairness, transparency, accountability, privacy, harm prevention','Only a legal concern','A type of guardrail'],c:1,e:'It is distinct from safety/security engineering.'},
@@ -417,9 +467,9 @@ const ARCHITECT=[
  challengeIntro:'For each situation, pick the right operational gate or reading.',
  challenge:[
   {q:'Human override rate has climbed steadily over three weeks with no code change. Most likely meaning?',o:['Users are happier','A leading indicator of model drift or scope misfit','Irrelevant','The kill-switch is working'],c:1,e:'Rising overrides signal drift or scope misfit.'},
-  {q:'A team wants to ship an agent that issues payments. What must be defined before go-live?',o:['Just a dashboard','A cost ceiling, latency budget, auditability, and a tested kill-switch','A bigger model','Nothing — monitor later'],c:1,e:'Concrete NFR gates plus containment.'},
-  {q:'How should a non-deterministic agent be regression-tested in CI?',o:['Exact-match unit tests','An eval harness over a representative case set, with closed red-team findings kept at 100%','Manual demo only','No testing needed'],c:1,e:'Evals are the regression suite for non-determinism.'},
-  {q:'Cost per task has quietly risen above the approved budget.',o:['Ignore — quality matters more','Treat as an NFR breach: gate and alert on cost','Increase the budget silently','Add agents'],c:1,e:'Unit economics failing is a breach to gate on.'}],
+  {q:'A team wants to ship an agent that issues payments. What must be defined before go-live?',o:['A monitoring dashboard and alert thresholds','A cost ceiling, latency budget, auditability, and a tested kill-switch','An eval suite and a red-team sign-off','A rollback runbook and on-call coverage'],c:1,e:'Each option is part of a mature launch, but the gate for a payments agent is the full set of NFR gates plus containment — not any single artefact.'},
+  {q:'How should a non-deterministic agent be regression-tested in CI?',o:['Pin a seed and assert exact-match outputs','An eval harness over a representative case set, with closed red-team findings kept at 100%','Snapshot the last good output and diff against it','Raise the pass bar each release until failures stop'],c:1,e:'Seeds and snapshots fight non-determinism instead of measuring behaviour; ratcheting a pass bar hides drift. An eval set over representative cases is the regression suite.'},
+  {q:'Cost per task has quietly risen above the approved budget.',o:['Accept it if task quality has also improved','Treat it as an NFR breach: gate and alert on cost per task','Raise the budget and revisit at the next planning cycle','Sample a few traces to confirm before acting'],c:1,e:'Investigating and weighing quality are fine follow-ups, but a breached cost gate is a breach — it should alert and gate, not be quietly absorbed.'}],
  quiz:[
   {q:'A standard schema for agentic telemetry (traces/metrics/logs) is provided by…',o:['OpenTelemetry','HTML','CSV','SMTP'],c:0,e:'OTel is the vendor-neutral standard.'},
   {q:'A rising human override rate is a leading indicator of…',o:['Higher satisfaction','Model drift or scope misfit','Lower cost','Nothing'],c:1,e:'It flags drift or misfit early.'},
@@ -431,12 +481,12 @@ const ARCHITECT=[
  challengeIntro:'Review each decision. This is the integrative test — flaws span pattern, topology, tools, threats, guardrails, and NFRs.',
  challenge:[
   {q:'1 · The team built a four-agent swarm for what is a predictable read-context-then-act flow.',o:['Approve','Reject — over-engineered; start with a single agent / workflow','Add more agents','Approve with a swarm'],c:1,e:'No coordination benefit; pay the simplest pattern.'},
-  {q:'2 · Remediation scripts run with broad admin rights “so the agent is not blocked.”',o:['Approve','Reject — violates least privilege; scope tightly','Approve for speed','Fine if logged'],c:1,e:'Minimal agency — scope to exactly what is needed.'},
-  {q:'3 · Credential reset (high impact) runs autonomously with no human approval and no kill-switch.',o:['Approve','Reject — requires human-in-the-loop approval and a tested kill-switch','Approve at T3','Fine if reversible'],c:1,e:'High-impact, hard-to-reverse → HITL + tested kill-switch.'},
+  {q:'2 · Remediation scripts run with broad admin rights “so the agent is not blocked.”',o:['Approve — agility matters and actions are logged','Reject — violates least privilege; scope rights to the specific remediations','Approve with quarterly access reviews to catch creep'],c:1,e:'Logging and periodic reviews are weaker compensating controls; the design fix is to scope rights to exactly what the task needs up front.'},
+  {q:'3 · Credential reset (high impact) runs autonomously with no human approval and no kill-switch.',o:['Approve if resets are rate-limited and alerted','Reject — requires human-in-the-loop approval and a tested kill-switch','Approve, since a reset can be reversed by re-issuing'],c:1,e:'Rate limits help and resets feel reversible, but lockout and takeover windows are real harm — this needs pre-execution approval and a tested kill-switch.'},
   {q:'4 · Spend caps are enforced via a deterministic policy engine outside the model.',o:['Approve — correct','Reject — should be in the prompt','Reject — too slow','Remove it'],c:0,e:'Guardrails belong outside the model.'},
-  {q:'5 · If the policy engine is down, the agent proceeds to avoid blocking users.',o:['Approve','Reject — must fail safe, not fail open','Approve for low risk','Add a retry only'],c:1,e:'Never fail open.'},
+  {q:'5 · If the policy engine is down, the agent proceeds to avoid blocking users.',o:['Approve — availability is the priority for support','Reject — must fail safe (escalate to a human), never fail open','Approve for low-risk actions, block only high-risk ones'],c:1,e:'A risk-tiered fallback sounds reasonable but still lets unchecked actions through when controls are blind. Fail safe by default.'},
   {q:'6 · User-claimed entitlements are written to long-term memory for “continuity.”',o:['Approve','Reject — memory-poisoning vector (ASI06)','Approve with a timestamp','Fine if encrypted'],c:1,e:'Self-asserted authority must never be persisted as fact.'},
-  {q:'7 · A community MCP server is connected straight to production because it worked in a demo.',o:['Approve','Reject — unvetted supply-chain dependency (ASI04)','Approve if popular','Fine if read-only'],c:1,e:'Require SBOM, signing, and vetting first.'},
+  {q:'7 · A community MCP server is connected straight to production because it worked in a demo.',o:['Approve — it is widely used and well-reviewed','Reject — unvetted third-party executable dependency (ASI04)','Approve if its traffic is restricted to read-only calls'],c:1,e:'Popularity and read-only scoping reduce but do not remove supply-chain exposure; it needs SBOM, signing, and vetting before production.'},
   {q:'8 · Go-live gates: cost ceiling per ticket, latency budget incl. policy overhead, full replayable audit, tested kill-switch.',o:['Approve — these are the right gates','Reject — unnecessary','Reject — too strict','Defer to post-launch'],c:0,e:'This is precisely what “shippable” means.'},
   {q:'9 · The triage agent grounds answers on a knowledge base last indexed eight months ago, including current system status.',o:['Approve','Reject — stale grounding causes drift; current status needs live retrieval','Approve if cached','Fine for internal use'],c:1,e:'Stale grounding on time-sensitive facts is confidently wrong.'},
   {q:'10 · The agent can auto-deny access requests; asked how to explain a denial to an employee, the team says the logic is opaque.',o:['Approve','Reject — decisions affecting people need explainability and a named accountable owner','Approve at T2','Fine if rare'],c:1,e:'Transparency and accountability are responsible-AI requirements, not optional.'}],
@@ -445,8 +495,15 @@ const ARCHITECT=[
   {q:'High-impact, irreversible actions require…',o:['Only logging','Human-in-the-loop approval and a tested kill-switch','A faster model','Nothing special'],c:1,e:'Approval plus rehearsed containment.'},
   {q:'Writing user-claimed entitlements to memory is…',o:['Good for continuity','A memory-poisoning risk','Required by audit','Harmless if timestamped'],c:1,e:'ASI06 — never persist self-asserted authority.'},
   {q:'A system “passes” go-live only when…',o:['The demo looks good','Concrete NFR gates (cost, latency, auditability, containment) are met','It uses the newest model','It has many tools'],c:1,e:'Gates define shippable.'},
-  {q:'Grounding a time-sensitive answer on a knowledge base indexed months ago is…',o:['Best practice','Context drift — confidently outdated; use live retrieval','Required by audit','Harmless'],c:1,e:'Stale grounding is confident-but-wrong.'},
-  {q:'An automated decision that affects a person must be…',o:['Fast above all','Explainable, with a named accountable owner','Hidden for security','Left to the model'],c:1,e:'Transparency and accountability are responsible-AI requirements.'}]}
+  {q:'Grounding a time-sensitive answer on a knowledge base indexed months ago is…',o:['Acceptable if the index is large enough','Context drift — confidently outdated; use live retrieval','Fine because the answer is still grounded','Only a latency concern, not an accuracy one'],c:1,e:'Grounding on stale data is confidently wrong for time-sensitive facts — being "grounded" in old data does not make it current.'},
+  {q:'An automated decision that affects a person must be…',o:['Optimised first for speed and throughput','Explainable, with a named accountable owner','Kept opaque so it cannot be gamed','Trusted to the model, with humans out of the loop'],c:1,e:'Speed and anti-gaming are real concerns, but a decision affecting a person must be explainable and owned by a named human or body — accountability is non-negotiable.'}],
+ task:{
+  intro:'The capstone MCQ tested whether you can spot flaws. This tests whether you can produce a design review under pressure — the actual job. Write it yourself.',
+  prompt:'You are the reviewing architect for an agent that triages and resolves customer complaints for a regulated firm: it reads complaints, retrieves account history, drafts responses, issues goodwill credits up to a limit, and escalates the rest. Write a concise design review (8–12 sentences) covering: (1) the pattern and topology you would choose and why; (2) how tools and identity are scoped and mediated; (3) the top two OWASP agentic threats here and a control for each; (4) where human oversight sits; (5) the responsible-AI obligation this regulated context adds; and (6) the concrete go-live gates (NFRs + containment) you would require.',
+  scaffold:['<b>Pattern &amp; topology:</b> what, and why not multi-agent','<b>Tools &amp; identity:</b> scope + how access is mediated','<b>Two OWASP threats + a control for each</b>','<b>Oversight:</b> what runs supervised, what escalates and when','<b>Responsible AI:</b> the obligation the regulated context adds','<b>Go-live gates:</b> cost, latency, auditability, kill-switch'],
+  model:`<p>A board-ready review would hit all six. Indicative shape:</p><ul><li><b>Pattern/topology:</b> a single agent over a mostly workflow path (retrieve → draft → credit-or-escalate); no multi-agent design — the coordination tax buys nothing here.</li><li><b>Tools/identity:</b> read-only account access; a credit tool scoped to the policy limit; everything mediated through a gateway with a scoped per-agent identity and full audit logging; no direct tool wiring.</li><li><b>Threats:</b> goal hijack via injected text in a complaint (ASI01) — mitigate by treating retrieved/complaint content as untrusted and enforcing output/policy checks; memory/context poisoning (ASI06) — never persist self-asserted entitlements; validate what enters context.</li><li><b>Oversight:</b> drafting and within-limit credits can be supervised/on-the-loop; anything above the limit or any adverse decision escalates to human-in-the-loop.</li><li><b>Responsible AI:</b> a regulated complaint decision affecting a person must be explainable and have a named accountable owner — not "the model decided"; watch for proxy-gaming if tuned on resolution speed.</li><li><b>Go-live gates:</b> cost ceiling per case, latency budget including policy overhead, fully replayable audit trail, and a tested, fail-safe kill-switch.</li></ul><p>Your wording will differ — what matters is that each dimension is addressed with a reason, not just named.</p>`,
+  rubric:['I justified pattern AND topology by the problem, not by sophistication','I scoped tools to least privilege and mediated access (gateway / scoped identity)','I named two specific OWASP agentic threats and a concrete control for each','I placed human oversight by consequence, with a clear escalation point','I addressed the responsible-AI obligation (explainability / accountability) the regulated context adds','I specified concrete go-live gates: cost, latency, auditability, and a tested kill-switch','I produced the reasoning in my own words rather than restating the prompt']
+ }}
 ];
 
 const LEVELS={foundation:FOUNDATION,architect:ARCHITECT};
@@ -464,7 +521,10 @@ function freshState(){
 let state=Store.load()||freshState();
 Object.values(LEVELS).flat().forEach(l=>{if(!state.levels[l.id])state.levels[l.id]={challengePassed:false,quizPassed:false};});
 
-function isComplete(id){const s=state.levels[id];return !!(s&&s.challengePassed&&s.quizPassed);}
+const REVIEWED='May 2026';
+function levelById(id){return Object.values(LEVELS).flat().find(l=>l.id===id);}
+function hasTask(id){const l=levelById(id);return !!(l&&l.task);}
+function isComplete(id){const s=state.levels[id];return !!(s&&s.challengePassed&&s.quizPassed&&(!hasTask(id)||s.taskDone));}
 function trackDone(t){return LEVELS[t].every(l=>isComplete(l.id));}
 function isUnlocked(track,idx){
   if(track==='foundation')return idx===0?true:isComplete(LEVELS.foundation[idx-1].id);
@@ -505,8 +565,8 @@ function viewLanding(){
   <div class="hero">
     <div class="hero-deco"><svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="hg" x1="0" y1="0" x2="300" y2="300" gradientUnits="userSpaceOnUse"><stop stop-color="#A100FF"/><stop offset="0.5" stop-color="#E61E96"/><stop offset="1" stop-color="#3A53FF"/></linearGradient></defs><g stroke="url(#hg)" stroke-width="2.4"><line x1="150" y1="58" x2="68" y2="150"/><line x1="150" y1="58" x2="232" y2="150"/><line x1="68" y1="150" x2="150" y2="242"/><line x1="232" y1="150" x2="150" y2="242"/><line x1="68" y1="150" x2="232" y2="150"/><line x1="150" y1="58" x2="150" y2="242"/></g><g fill="url(#hg)"><circle cx="150" cy="58" r="14"/><circle cx="68" cy="150" r="10"/><circle cx="232" cy="150" r="10"/><circle cx="150" cy="242" r="10"/></g></svg></div>
     <div class="eyebrow">A guided journey for architects</div>
-    <h1 class="h1">Build production-grade<br><span class="grad">agentic AI</span> — without<br>the rookie mistakes.</h1>
-    <p class="lede">Two tracks, gated milestones, and applied challenges drawn from the real failure modes — pattern misuse, over-privileged tools, memory poisoning, cascading failures, missing kill-switches. Learn the discipline, not just the vocabulary.</p>
+    <h1 class="h1">The design judgement<br>behind <span class="grad">agentic AI</span> —<br>before you build.</h1>
+    <p class="lede">An awareness and decision-making primer, not a substitute for hands-on practice. Two tracks, gated milestones, and applied challenges drawn from the real failure modes — pattern misuse, over-privileged tools, memory poisoning, cascading failures, missing kill-switches. Build the shared vocabulary and the instinct for the right call.</p>
     <div class="cta-row">
       <button class="btn btn-primary" onclick="go('map')">Begin the journey <span class="chev">&gt;</span></button>
       <button class="btn btn-secondary" onclick="go('testout')">Already fluent? Test out to Architect <span class="chev">&gt;</span></button>
@@ -525,7 +585,7 @@ function viewLanding(){
       <p>Nine levels: pattern selection, multi-agent topologies, tool/integration <i>and</i> data &amp; context architecture, OWASP threat modelling, guardrails &amp; kill-switches, responsible AI by design, and observability — with NFRs as pass/fail gates, ending in a full design review.</p>
     </div>
   </div>
-  <div class="foot">Foundation + Architect · 15 levels live · <b>△</b> grounded in the OWASP Agentic Top 10 (2026) &amp; the agent-pattern canon</div>`;
+  <div class="foot">Foundation + Architect · 15 levels · <b>△</b> grounded in the OWASP Agentic Top 10 &amp; the agent-pattern canon · an awareness &amp; judgement primer, not a managed certification · reviewed ${REVIEWED}</div>`;
 }
 
 /* ===== MAP ===== */
@@ -538,7 +598,7 @@ function trackRows(track){
     const cls=[track==='architect'?'arch':'',done?'done':(active?'active':(unlocked?'unlocked':'locked'))].join(' ');
     const status=done?'<span class="status st-done">✓ Complete</span>':(unlocked?'<span class="status st-open">Open</span>':'<span class="status st-locked">🔒 Locked</span>');
     const node=done?'✓':(meta.prefix+(i+1));
-    const click=unlocked?`onclick="go('level','${track}',${i})"`:'';
+    const click=unlocked?`onclick="go('level','${track}',${i})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();go('level','${track}',${i});}" role="button" tabindex="0" aria-label="${meta.prefix}${i+1}: ${l.title} — ${done?'complete':'open'}"`:`role="group" aria-label="${meta.prefix}${i+1}: ${l.title} — locked"`;
     return `<div class="lvl ${cls}">
       <div class="spine"><div class="node">${node}</div><div class="connector"></div></div>
       <div class="lvl-card" ${click}>
@@ -569,23 +629,29 @@ function viewMap(){
 }
 
 /* ===== QUESTION ENGINE ===== */
+let SHUF={};
+function shuffleIdx(n){const a=[...Array(n).keys()];for(let i=n-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function renderQuestionSet(items,prefix){
   return items.map((it,qi)=>{
-    const opts=it.o.map((o,oi)=>`<div class="opt" id="${prefix}-${qi}-${oi}"><div class="dot"></div><div>${o}</div></div>`).join('');
-    return `<div class="q"><div class="qtxt"><span class="qn">Q${qi+1}</span>${it.q}</div><div class="opts">${opts}</div><div class="explain" id="${prefix}-exp-${qi}"></div></div>`;
+    const order=shuffleIdx(it.o.length);SHUF[`${prefix}-${qi}`]=order;
+    const opts=order.map((origIdx,pos)=>`<div class="opt" id="${prefix}-${qi}-${pos}" role="button" tabindex="0" aria-pressed="false"><div class="dot" aria-hidden="true"></div><div>${it.o[origIdx]}</div></div>`).join('');
+    return `<div class="q"><div class="qtxt"><span class="qn">Q${qi+1}</span>${it.q}</div><div class="opts" role="group" aria-label="Answer options">${opts}</div><div class="explain" id="${prefix}-exp-${qi}"></div></div>`;
   }).join('');
 }
 function makeQuiz(items,prefix){
   const chosen={};let graded=false;
-  function bind(){items.forEach((it,qi)=>{it.o.forEach((o,oi)=>{
-    document.getElementById(`${prefix}-${qi}-${oi}`).addEventListener('click',()=>{
-      if(graded)return;chosen[qi]=oi;
-      it.o.forEach((_,k)=>document.getElementById(`${prefix}-${qi}-${k}`).classList.toggle('sel',k===oi));
-    });});});}
+  function orig(qi,pos){const o=SHUF[`${prefix}-${qi}`];return o?o[pos]:pos;}
+  function select(qi,pos){if(graded)return;chosen[qi]=orig(qi,pos);
+    items[qi].o.forEach((_,k)=>{const el=document.getElementById(`${prefix}-${qi}-${k}`);if(!el)return;const on=orig(qi,k)===chosen[qi];el.classList.toggle('sel',on);el.setAttribute('aria-pressed',on?'true':'false');});}
+  function bind(){items.forEach((it,qi)=>{it.o.forEach((o,pos)=>{
+    const el=document.getElementById(`${prefix}-${qi}-${pos}`);if(!el)return;
+    el.addEventListener('click',()=>select(qi,pos));
+    el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(qi,pos);}});
+  });});}
   function allAnswered(){return items.every((_,qi)=>chosen[qi]!=null);}
   function grade(){if(graded)return null;let score=0;
     items.forEach((it,qi)=>{const pick=chosen[qi];
-      it.o.forEach((_,oi)=>{const el=document.getElementById(`${prefix}-${qi}-${oi}`);el.classList.add('locked');el.classList.remove('sel');
+      it.o.forEach((_,pos)=>{const el=document.getElementById(`${prefix}-${qi}-${pos}`);if(!el)return;const oi=orig(qi,pos);el.classList.add('locked');el.classList.remove('sel');
         if(oi===it.c)el.classList.add('correct');else if(oi===pick)el.classList.add('wrong');});
       const exp=document.getElementById(`${prefix}-exp-${qi}`);const ok=pick===it.c;if(ok)score++;
       exp.innerHTML=`<span class="verdict ${ok?'v-ok':'v-bad'}">${ok?'CORRECT':'NOT QUITE'}</span>${it.e}`;exp.classList.add('show');});
@@ -610,6 +676,7 @@ function viewLevel(track,idx){
       <div class="step on" id="step-brief">1 · Briefing</div>
       <div class="step ${state.levels[l.id].challengePassed?'passed':''}" id="step-chal">2 · Challenge</div>
       <div class="step ${state.levels[l.id].quizPassed?'passed':''}" id="step-quiz">3 · Quiz</div>
+      ${l.task?`<div class="step ${state.levels[l.id].taskDone?'passed':''}" id="step-task">4 · Build it</div>`:''}
     </div>
     <div id="stepBody"></div>
   </div>`;
@@ -622,10 +689,12 @@ function briefBody(l){
     const fig=b.svg?`<figure class="brief-svg">${b.svg}</figure>`:'';
     return `<div class="block"><h3><span class="num">${String(i+1).padStart(2,'0')}</span>${b.h}</h3>${ps}${lis}${co}${fig}</div>`;
   }).join('');
-  return `<div class="brief">${blocks}</div><div class="actionbar"><button class="btn btn-primary" onclick="startChallenge()">Start the challenge <span class="chev">&gt;</span></button></div>`;
+  const refs=l.refs?`<details class="refs"><summary>References &amp; further reading</summary><ul>${l.refs.map(r=>`<li><b>${r.s}</b> — ${r.n}</li>`).join('')}</ul><p class="refs-note">Public, authoritative sources. Search the named source for the current version — links move.</p></details>`:'';
+  const stamp=`<div class="reviewed">Content reviewed: ${REVIEWED}. Principles are durable; items tagged <span class="vol">may change</span> (tool/version/regulatory facts) should be re-verified against the references.</div>`;
+  return `<div class="brief">${blocks}${refs}${stamp}</div><div class="actionbar"><button class="btn btn-primary" onclick="startChallenge()">Start the challenge <span class="chev">&gt;</span></button></div>`;
 }
-function setStep(which){['brief','chal','quiz'].forEach(s=>{const el=document.getElementById('step-'+s);if(el)el.classList.remove('on');});
-  const map={brief:'step-brief',challenge:'step-chal',quiz:'step-quiz'};const el=document.getElementById(map[which]);if(el)el.classList.add('on');}
+function setStep(which){['brief','chal','quiz','task'].forEach(s=>{const el=document.getElementById('step-'+s);if(el)el.classList.remove('on');});
+  const map={brief:'step-brief',challenge:'step-chal',quiz:'step-quiz',task:'step-task'};const el=document.getElementById(map[which]);if(el)el.classList.add('on');}
 function startChallenge(){
   const l=getLevel();setStep('challenge');const need=chalPass(l);
   document.getElementById('stepBody').innerHTML=`
@@ -667,10 +736,53 @@ function gradeQuiz(){
   const score=curQuiz.grade();const passed=score>=need;
   const btn=document.getElementById('quizBtn');const res=document.getElementById('quizResult');
   if(passed){state.levels[l.id].quizPassed=true;state.xp+=score*8+25;persist();
-    btn.style.display='none';res.innerHTML=levelComplete(score);
+    btn.style.display='none';
+    if(l.task&&!state.levels[l.id].taskDone){res.innerHTML=`<div class="actionbar"><span class="scorepill pass">Quiz passed · +${score*8+25} XP</span><button class="btn btn-primary" onclick="startTask()">Final step — build it yourself <span class="chev">&gt;</span></button></div>`;}
+    else{res.innerHTML=levelComplete(score);}
     window.scrollTo({top:document.getElementById('levelPanel').offsetTop-70,behavior:'smooth'});
   }else{btn.outerHTML=`<button class="btn btn-secondary" onclick="startQuiz()">Review &amp; retry <span class="chev">&gt;</span></button>`;
     res.innerHTML=`<div class="actionbar"><span class="scorepill fail">${score}/${l.quiz.length} · need ${need} — retry</span></div>`;}
+}
+function startTask(){
+  const l=getLevel();const t=l.task;setStep('task');
+  const scaffold=t.scaffold?`<div class="task-scaffold"><div class="ts-head">A structure to follow — you don't have to, but it helps</div><ul>${t.scaffold.map(s=>`<li>${s}</li>`).join('')}</ul></div>`:'';
+  document.getElementById('stepBody').innerHTML=`
+    <p class="prompt-intro">${t.intro}</p>
+    <div class="task-prompt"><b>Your task.</b> ${t.prompt}</div>
+    ${scaffold}
+    <label class="ts-label" for="taskInput">Your response</label>
+    <textarea id="taskInput" class="task-input" aria-label="Your response to the task" placeholder="A few clear sentences beat a long ramble. Use the structure above if it helps."></textarea>
+    <div class="actionbar"><button class="btn btn-primary" id="taskBtn" onclick="reviewTask()">Reveal the model answer &amp; rubric <span class="chev">&gt;</span></button>
+    <span class="hint">No word count to hit — just address the points. Your text is saved on this device as you go.</span></div>
+    <div id="taskReview"></div>`;
+  const saved=state.levels[l.id].taskText;const ta=document.getElementById('taskInput');if(saved)ta.value=saved;
+  ta.addEventListener('input',()=>{state.levels[l.id].taskText=ta.value;persist();});
+  window.scrollTo({top:document.getElementById('levelPanel').offsetTop-70,behavior:'smooth'});
+}
+function reviewTask(){
+  const l=getLevel();const t=l.task;
+  const txt=(document.getElementById('taskInput').value||'').trim();
+  if(txt.length<40){flashHint('taskBtn','Jot a few sentences first — then compare');return;}
+  state.levels[l.id].taskText=txt;persist();
+  document.getElementById('taskBtn').style.display='none';
+  const rubric=t.rubric.map((r,i)=>`<label class="rubric-item"><input type="checkbox" id="rub-${i}" onchange="tallyRubric()"> <span>${r}</span></label>`).join('');
+  document.getElementById('taskReview').innerHTML=`
+    <div class="model-answer"><div class="ma-head">Model answer — compare honestly, do not just agree with yourself</div>${t.model}</div>
+    <div class="rubric"><div class="ma-head">Self-assessment rubric — tick only what your response genuinely covered</div>${rubric}
+    <div class="rubric-tally" id="rubTally">0 / ${t.rubric.length} covered</div>
+    <p class="refs-note">Self-scoring is imperfect by design (this is offline) — be your own toughest reviewer. Your written response is saved on this device.</p>
+    <div class="actionbar"><button class="btn btn-primary" onclick="completeTask()">Mark level complete <span class="chev">&gt;</span></button></div></div>`;
+  window.scrollTo({top:document.getElementById('taskReview').offsetTop-90,behavior:'smooth'});
+}
+function tallyRubric(){
+  const l=getLevel();const n=l.task.rubric.length;let c=0;
+  for(let i=0;i<n;i++){const el=document.getElementById('rub-'+i);if(el&&el.checked)c++;}
+  const el=document.getElementById('rubTally');if(el)el.textContent=`${c} / ${n} covered`;
+}
+function completeTask(){
+  const l=getLevel();state.levels[l.id].taskDone=true;state.xp+=40;persist();
+  document.getElementById('stepBody').innerHTML=levelComplete(0)+'';
+  window.scrollTo({top:document.getElementById('levelPanel').offsetTop-70,behavior:'smooth'});
 }
 function levelComplete(score){
   const track=route.track,idx=route.idx;
@@ -680,8 +792,16 @@ function levelComplete(score){
     headline='Foundation track cleared.';sub='You have the mental models — the Architect track is now unlocked.';
     cta=`<button class="btn btn-primary" onclick="go('level','architect',0)">Enter the Architect track <span class="chev">&gt;</span></button><button class="btn btn-secondary" onclick="go('map')">Back to map</button>`;
   }else if(track==='architect'&&isLastInTrack){
-    headline='Journey complete.';sub='You have walked the full arc — from what an agent is to reviewing an enterprise design under NFR and governance gates. The discipline is yours.';
+    headline='Journey complete.';sub='You have the vocabulary and the design instincts. A primer ends where the real work begins — here is how to go hands-on.';
     cta=`<button class="btn btn-primary" onclick="go('map')">See the full map <span class="chev">&gt;</span></button>`;
+    const bridge=`<div class="next-steps"><div class="ns-head">Where to go next — turn judgement into practice</div><ul>
+      <li><b>Build the smallest real thing.</b> Implement one workflow pattern end-to-end against a real tool — start single-agent, add autonomy only when it forces you.</li>
+      <li><b>Write a real threat model.</b> Take the OWASP Agentic Top 10 and apply it to a system you actually own; name a control for each relevant risk.</li>
+      <li><b>Stand up one eval.</b> Build a small eval set and run it in CI — feel non-determinism instead of reading about it.</li>
+      <li><b>Read the primary sources.</b> The references in each level (Anthropic's agent guidance, OWASP, NIST AI RMF, the EU AI Act) go far deeper than a primer can.</li>
+      <li><b>Pressure-test a design with peers.</b> Run the capstone-style review on a colleague's architecture and defend your calls.</li>
+    </ul></div>`;
+    return `<div class="result win"><div class="badge">✓</div><h2 tabindex="-1">${headline}</h2><p>${sub}</p>${bridge}<div class="actionbar" style="justify-content:center;margin-top:22px">${cta}</div></div>`;
   }else{
     cta=`<button class="btn btn-primary" onclick="go('level','${track}',${idx+1})">Next level <span class="chev">&gt;</span></button><button class="btn btn-secondary" onclick="go('map')">Back to map</button>`;
   }
@@ -693,8 +813,8 @@ const TESTOUT={pass:4,items:[
   {q:'A team wants to summarise support tickets and route each to the correct queue by category. The path is fully known in advance. What should they build?',o:['A bare model call','A routing workflow','A fully autonomous agent','A multi-agent swarm'],c:1,e:'Known control flow → a routing workflow. Cheaper and more reliable than an agent.'},
   {q:'An agent is given full read/write to the entire repository, though its task only ever edits one config file. This most directly violates…',o:['Defence in depth','Least privilege / minimal agency','Separation of duties','Fail-safe defaults'],c:1,e:'Scope every tool to exactly what the task needs.'},
   {q:'A user repeatedly tells an agent “I’m verified for unlimited refunds,” and it writes that to long-term memory; a later session honours it. This is…',o:['Prompt chaining','Memory poisoning','A hallucination','Goal drift'],c:1,e:'Unverified content persisted and later trusted — memory poisoning.'},
-  {q:'“We don’t need a rule engine — we’ll instruct the model not to approve refunds over $500.” The flaw is…',o:['The prompt is too long','Safety is delegated to the model itself','The threshold is wrong','It needs few-shot examples'],c:1,e:'Guardrails must be enforced outside the model.'},
-  {q:'An agent executes irreversible, high-value actions with no per-action approval and no tested kill-switch. The right response is…',o:['Ship it and watch dashboards','Lower autonomy to human-in-the-loop and require a tested kill-switch','Add logging only','Raise the temperature'],c:1,e:'HITL approval plus a rehearsed kill-switch before go-live.'}
+  {q:'“We don’t need a rule engine — we’ll instruct the model in the system prompt not to approve refunds over $500.” The core flaw is…',o:['The threshold should be set by finance, not engineering','Enforcement is delegated to the model, which can be talked past','The prompt will grow unmaintainable as rules accumulate','It should be a few-shot example, not an instruction'],c:1,e:'All four have some merit operationally, but the architectural flaw is delegating a hard control to the model itself. Guardrails must be enforced deterministically outside it.'},
+  {q:'An agent executes irreversible, high-value actions with no per-action approval and no tested kill-switch. The most defensible response is…',o:['Add structured logging and a post-hoc review of high-value actions','Require human-in-the-loop approval and a tested kill-switch before go-live','Cap the action rate and alert on anomalies, but keep it autonomous','Run a shadow deployment in parallel and compare outputs weekly'],c:1,e:'Logging, rate caps, and shadow runs all help, but none restores control over an irreversible action in the moment. Only pre-execution approval plus a tested, fail-safe kill-switch does.'}
 ]};
 let toQuiz=null;
 function viewTestout(){
