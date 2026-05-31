@@ -1,8 +1,10 @@
 # The Agentic Architect — Journey
 
-An interactive, self-contained learning app that takes a technical professional from *"what is an agent?"* to *reviewing an enterprise agentic design under security, data, responsible-AI, and NFR gates.*
+An interactive, self-contained learning app that builds the **design judgement** behind agentic AI — from *"what is an agent?"* to *reviewing an enterprise design under security, data, responsible-AI, and NFR gates.*
 
-It is a single HTML file. No build step, no server, no dependencies to install. Open it in a browser [Agentic Architect Journey](https://anikm1987.github.io/agentic_architect_journey/)
+It is an **awareness and decision-making primer**, not a managed certification and not a substitute for hands-on practice. It builds shared vocabulary and the instinct for the right architectural call; it does not, and is not meant to, verify production competence (see *Scope & honest limits* below).
+
+It is a single HTML file. No build step, no server, no dependencies to install. Open it in a browser and it runs.
 
 > © 2026 **Aniket Mukherjee**. All rights reserved.
 
@@ -15,7 +17,9 @@ A gated, milestone-based curriculum built for **architects and senior engineers*
 - **Foundation (6 levels)** — the mental models. For a technical professional new to agentic AI.
 - **Architect (9 levels)** — enterprise design discipline. For people who already hold distributed systems, security, and SDLC, and need the *agentic delta*.
 
-Each level follows the same loop: **Briefing → applied Challenge → Quiz → Unlock.** A level only opens when the previous one is passed (70% on both the challenge and the quiz). Progress and XP are tracked.
+Each level follows the same loop: **Briefing → applied Challenge → Quiz → Unlock.** A level only opens when the previous one is passed (70% on both the challenge and the quiz). The two capstones add a fourth step — a **constructed-response task** (write a design review in free text, then self-assess against a visible rubric and model answer) that must be completed to finish the level. Progress and XP are tracked.
+
+Answer options are **shuffled on every render**, so neither answer length nor position is a usable tell.
 
 A **test-out diagnostic** on the landing screen lets a fluent practitioner skip Foundation and unlock the Architect track directly (4 of 5 to pass).
 
@@ -25,7 +29,7 @@ The teaching emphasis throughout is judgement, not vocabulary: most challenges a
 
 ## How to run it
 
-1. Download `Agentic_Architect_Journey_v0.6.html`.
+1. Download `Agentic_Architect_Journey_v0.8.html`.
 2. Double-click it, or open it in any modern browser (Chrome, Edge, Firefox, Safari).
 
 That's all. It is fully offline once loaded (web fonts load from Google Fonts if online; it degrades gracefully to system fonts if not).
@@ -104,11 +108,20 @@ All levels live in two JavaScript arrays near the top of the `<script>` block: `
   title: '...',
   desc: '...',                     // one-line description on the map
   cpass: 5,                        // optional: challenge pass threshold (defaults to 70%)
-  brief:    [ { h, p:[...], li:[...], callout, svg } ],  // briefing blocks; svg is an optional inline-SVG string rendered under the block
-  challenge:[ { q, o:[...], c, e } ],               // c = index of correct option, e = explanation
-  quiz:     [ { q, o:[...], c, e } ]
+  refs:     [ { s, n } ],          // optional: references panel — s = source name, n = note
+  brief:    [ { h, p:[...], li:[...], callout, svg } ],  // briefing blocks; svg is an optional inline-SVG string
+  challenge:[ { q, o:[...], c, e } ],               // c = index of correct option (pre-shuffle), e = explanation
+  quiz:     [ { q, o:[...], c, e } ],
+  task: {                          // optional: constructed-response step (used on the two capstones)
+    intro, prompt,
+    scaffold: [...],               // optional sentence-starters shown above the textarea
+    model,                         // model-answer HTML revealed after the learner writes
+    rubric: [...]                  // self-assessment checklist items
+  }
 }
 ```
+
+`c` is the index of the correct option **as authored**; the render-time shuffle handles display order and maps the learner's pick back to it, so you never renumber `c` when reordering options. Mark volatile facts inline with `<span class="vol">may change</span>`. The "content reviewed" date is the `REVIEWED` constant near the top of the script.
 
 To edit text, change a string. To add a question, add an object to `challenge` or `quiz`. To add a level, add an object to the array — the map, gating, and progress logic pick it up automatically. The test-out diagnostic is the separate `TESTOUT` object.
 
@@ -136,20 +149,31 @@ No framework knowledge is required to edit content; it is vanilla HTML/CSS/JS.
 | v0.4 | Replaced the placeholder mark with an original logomark and network motif. |
 | v0.5 | Added **A4 Data & Context Architecture** and **A7 Responsible AI by Design**; capstone expanded to 10 decisions. **15 levels total.** |
 | v0.6 | Embedded **8 briefing diagrams** (inline SVG, in-theme): F1 autonomy ladder, F2 agent loop, F5 oversight spectrum, A1 pattern-selection decision, A2 single-vs-orchestrator topology, A3 tool gateway, A4 grounding pipeline, A6 autonomy tiers. Renderer extended with an optional per-block `svg` field — additive, non-breaking. |
+| v0.7 | **Rescoped to a primer** (honest framing, not "production-grade"). Added **constructed-response tasks** to both capstones, **references panels** to six key levels, a **"content reviewed" date stamp**, and `may change` tags on volatile facts. Labelled the T0–T3 autonomy tiers as a teaching model, not a standard. Hardened the highest-stakes distractors (test-out, capstones, NFR items). |
+| v0.8 | **Primer polish pass.** Options now **shuffle on every render** (removes the length and position tells across all items); remaining cartoon distractors rewritten as plausible alternatives. Lowered constructed-response friction (sentence-starter scaffolds, gentler gate, live auto-save). **Accessibility pass** (keyboard-operable cards and options, visible focus states, WCAG-contrast `may change` tag, ARIA labelling). Added a **"go hands-on next" bridge** on the journey-complete screen. |
 
 ---
 
-## Known limitations / possible next steps
+## Scope & honest limits
 
-- **Diagram coverage is selective** — eight briefings carry diagrams (see v0.6). The remaining levels are deliberately text-only where a visual would be decoration rather than teaching (e.g. the OWASP Top 10 list in A5, the pillar lists in A7/A8, and the capstone decision exercises). The strongest remaining candidate is an F4 memory diagram (short-term vs long-term with a poisoned write surviving into a later session).
-- **Single-file, single-author content** — no CMS; content edits are made directly in the file.
-- **No completion certificate or export** — could be added.
-- **Foundation is intentionally lean** — RAG/grounding is taught in the Architect track only; a light Foundation primer was deliberately omitted to keep the beginner track short.
+This is a **primer**, and these are deliberate boundaries of that scope, not unfinished work:
+
+- **It builds judgement; it does not verify competence.** The constructed-response tasks are self-assessed against a rubric and a model answer. Self-scoring is imperfect by design — a generous self-marker passes as easily as an expert. Verifying real competence needs AI-graded or human-reviewed responses, which a self-contained offline file cannot provide. If completion must *prove* competence, this tool is the on-ramp, not the certification.
+- **It teaches the shape of the work, not the doing.** Levels are short briefings plus applied challenges, with two written tasks. It does not put you in a real stack, codebase, or eval harness — that is what the "go hands-on next" bridge at the end points you toward.
+- **No cohort reporting.** Progress lives in `localStorage` per device. There is no LMS/SCORM/xAPI hook, completion export, or certificate, so a training manager cannot centrally track who finished. It is self-study, by design.
+- **Model answers are in the source.** Anyone who opens the file can read the capstone model answers — acceptable for self-study, unsuitable for anything assessed.
+- **Accessibility is addressed by construction, not audited.** Keyboard operation, focus states, ARIA labels, and contrast were built in; a formal audit with a screen reader and contrast tooling on real devices has not been run.
+
+## Other notes
+
+- **Single-file, single-author content** — no CMS; edits are made directly in the file (see *Customising the content*).
+- **Diagram coverage is selective** — eight briefings carry diagrams. Remaining levels are deliberately text-only where a visual would be decoration rather than teaching (e.g. the OWASP Top 10 list in A5, the pillar lists in A7/A8, the capstone exercises).
+- **Currency** — the tooling and regulatory layer moves fast; volatile facts are tagged `may change` and a "content reviewed" date is shown. Plan a periodic content review.
 
 ---
 
 ## License
 
-© 2026 Aniket Mukherjee. All rights reserved. 
+© 2026 Aniket Mukherjee. All rights reserved. This work and its content may not be reproduced or distributed without permission.
 
 *A copyright notice asserts ownership but is not itself legal protection. If this will be distributed beyond your control, seek appropriate legal advice on licensing.*
