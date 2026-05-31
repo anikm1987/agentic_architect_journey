@@ -4,7 +4,7 @@ An interactive, self-contained learning app that builds the **design judgement**
 
 It is an **awareness and decision-making primer**, not a managed certification and not a substitute for hands-on practice. It builds shared vocabulary and the instinct for the right architectural call; it does not, and is not meant to, verify production competence (see *Scope & honest limits* below).
 
-It is a single HTML file. No build step, no server, no dependencies to install. Open it in a browser https://anikm1987.github.io/agentic_architect_journey/.
+It is a single HTML file. No build step, no server, no dependencies to install. Open it in a browser and it runs. https://anikm1987.github.io/agentic_architect_journey/
 
 > Created & assembled by **Aniket Mukherjee**.
 
@@ -29,7 +29,7 @@ The teaching emphasis throughout is judgement, not vocabulary: most challenges a
 
 ## How to run it
 
-1. Download `Agentic_Architect_Journey_v0.9.html`.
+1. Download `Agentic_Architect_Journey_v0.10.html`.
 2. Double-click it, or open it in any modern browser (Chrome, Edge, Firefox, Safari).
 
 That's all. It is fully offline once loaded (web fonts load from Google Fonts if online; it degrades gracefully to system fonts if not).
@@ -152,6 +152,7 @@ No framework knowledge is required to edit content; it is vanilla HTML/CSS/JS.
 | v0.7 | **Rescoped to a primer** (honest framing, not "production-grade"). Added **constructed-response tasks** to both capstones, **references panels** to six key levels, a **"content reviewed" date stamp**, and `may change` tags on volatile facts. Labelled the T0–T3 autonomy tiers as a teaching model, not a standard. Hardened the highest-stakes distractors (test-out, capstones, NFR items). |
 | v0.8 | **Primer polish pass.** Options now **shuffle on every render** (removes the length and position tells across all items); remaining cartoon distractors rewritten as plausible alternatives. Lowered constructed-response friction (sentence-starter scaffolds, gentler gate, live auto-save). **Accessibility pass** (keyboard-operable cards and options, visible focus states, WCAG-contrast `may change` tag, ARIA labelling). Added a **"go hands-on next" bridge** on the journey-complete screen. |
 | v0.9 | Changed the footer and source notice from a rights-reserved copyright line to a **creator credit** — "Created & assembled by Aniket Mukherjee" — reflecting attribution rather than restriction. |
+| v0.10 | Released publicly under the **MIT License** (added `LICENSE`, source-header and footer notices) ahead of GitHub Pages hosting. |
 
 ---
 
@@ -173,10 +174,10 @@ This is a **primer**, and these are deliberate boundaries of that scope, not unf
 
 ---
 
-## Credit
+## Credit & License
 
 Created & assembled by **Aniket Mukherjee**.
 
 The original expression, level structure, diagrams, and code are the author's own work, assembled into this tool. The underlying frameworks it teaches — the OWASP Agentic Top 10, the workflow/agent pattern canon, NIST AI RMF, the EU AI Act — belong to their respective bodies and are referenced, not claimed.
 
-If you share or adapt this, please keep the credit to Aniket Mukherjee as creator.
+Released under the **MIT License** (see `LICENSE`). You are free to use, modify, and distribute it, including commercially; the only condition is that the copyright and credit notice is retained.
