@@ -2,7 +2,7 @@
 
 An interactive, self-contained learning app that takes a technical professional from *"what is an agent?"* to *reviewing an enterprise agentic design under security, data, responsible-AI, and NFR gates.*
 
-It is a single HTML file. No build step, no server, no dependencies to install. Open it in a browser and it runs.
+It is a single HTML file. No build step, no server, no dependencies to install. Open it in a browser [Agentic Architect Journey](https://anikm1987.github.io/agentic_architect_journey/)
 
 > © 2026 **Aniket Mukherjee**. All rights reserved.
 
